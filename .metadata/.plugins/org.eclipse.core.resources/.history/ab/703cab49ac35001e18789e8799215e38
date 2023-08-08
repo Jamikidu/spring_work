@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean class="di_p.HandPhone" name="hp2">
+		<property name="name">
+			<value>어른폰</value>
+		</property>
+		<property name="cam">
+			<ref bean="cam2"/>
+		</property>
+	</bean>
+	<bean class="di_p.Camera" name="cam2">
+		<property name="name" value="후방카메라"/>		<property name="pixel" value="2000"/>
+	</bean>
+	<bean class="di_p.Bicycle" name="bi1">
+		<property name="biname">
+			<value>세발자전거</value>
+		</property>
+		<property name="wheel">
+			<ref bean="세발자전거용"/>
+		</property>
+		<property name="handle">
+			<ref bean="handle"/>
+		</property>
+		<property name="basket">
+			<ref bean="basket"/>
+		</property>
+	</bean>
+	<bean class="di_p.Wheel" name="wheel3">
+		<property name="wname" value="세발자전거용"></property>
+		<property name="wheels" value="3"></property>
+	</bean>
+	<bean class="di_p.Handle" name="handle">
+		<property name="hname" value="공용핸들"></property>
+	</bean>
+	<bean class="di_p.Basket" name="basket">
+		<property name="bname" value="공용바구니"></property>
+	</bean>
+</beans>
