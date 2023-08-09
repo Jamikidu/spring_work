@@ -1,0 +1,10 @@
+package di_p;
+
+public class Cacl {
+	Student std;
+}
+
+Class Student{
+	String name;
+	int kscore,escore,mscore,sum,avg;
+}

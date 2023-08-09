@@ -1,0 +1,12 @@
+package di_p;
+
+public class Class1 {
+	Student[] std;
+
+	public Class1(Student std) {
+		super();
+		this.std = std;
+	}
+	
+	
+}

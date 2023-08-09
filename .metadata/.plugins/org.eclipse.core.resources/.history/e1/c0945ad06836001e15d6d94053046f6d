@@ -1,0 +1,16 @@
+package di_p;
+
+public class Calc {
+	Student std;
+}
+
+class Student{
+	String name;
+	//int kscore,escore,mscore,sum,avg;
+	int[] scores;
+	int sum,avg;
+	
+	
+	
+	
+}

@@ -34,6 +34,8 @@ public class DI_main {
 		
 		System.out.println(context.getBean("cam3"));
 		System.out.println(context.getBean("cam5"));
+		
+		
 	}
 
 }

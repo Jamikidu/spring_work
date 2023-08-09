@@ -4,6 +4,7 @@ import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import di_p.bicycle.Bicycle;
+import di_p.bicycle.InterBiCycle;
 import di_p.bicycle.Wheel;
 
 public class Bicycle_main {
@@ -27,6 +28,18 @@ public class Bicycle_main {
 		System.out.println(bi2);
 		System.out.println(bi3);
 
+		/* 출력1 */
+		for (String str : "bi1,bi2,bi3".split(",")) {
+			Bicycle bc = context.getBean(str,Bicycle.class);
+			System.out.println(bc);
+		}
+		
+		/*출력2
+		for (String str : "bi1,bi2,bi3".split(",")) {
+			InterBiCycle bc = context.getBean(str,InterBiCycle.class);
+			System.out.println(bc);
+		}
+		*/
 	}
 
 }

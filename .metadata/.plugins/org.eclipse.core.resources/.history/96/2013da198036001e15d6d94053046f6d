@@ -1,0 +1,18 @@
+package di_p;
+
+import java.util.Arrays;
+
+public class Class1 {
+	Student[] std;
+
+	public Class1(Student[] std) {
+		super();
+		this.std = std;
+	}
+
+	@Override
+	public String toString() {
+		return "Class1 [std=" + Arrays.toString(std) + "]";
+	}
+	
+}

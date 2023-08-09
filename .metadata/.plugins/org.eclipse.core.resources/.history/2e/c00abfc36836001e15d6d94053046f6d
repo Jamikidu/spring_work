@@ -1,0 +1,26 @@
+package di_p;
+
+public class Calc {
+	Student std;
+}
+
+class Student{
+	String name;
+	//int kscore,escore,mscore,sum,avg;
+	int[] scores;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int[] getScores() {
+		return scores;
+	}
+	public void setScores(int[] scores) {
+		this.scores = scores;
+	}
+	
+	
+}
