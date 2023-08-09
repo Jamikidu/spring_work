@@ -20,7 +20,7 @@ public class Collection_ExamMain {
 	public static void main(String[] args) {
 		
 		AbstractApplicationContext context = 
-				new ClassPathXmlApplicationContext("di_xml/coll_exam.xml");
+				new ClassPathXmlApplicationContext("teacher/coll_exam.xml");
 
 		
 		for (Stud st: context.getBean("exam", Exam.class).getStuds()) {
