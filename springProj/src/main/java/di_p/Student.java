@@ -2,7 +2,9 @@ package di_p;
 
 import java.util.Arrays;
 
-public class Student {
+import teacher.di_p.Stud;
+
+public class Student implements Comparable<Student>{
 
 	String name;
 	int[] scores;
@@ -62,6 +64,18 @@ public class Student {
 	public String toString() {
 		return "학생 [이름=" + name + ", 과목점수=" + Arrays.toString(scores) + ", 총점=" + sum + ", 등수=" + rank
 				+ ", 평균=" + avg + "]\n";
+	}
+	
+	@Override
+	public int compareTo(Student you) {
+		
+		int res = rank - you.rank;
+		
+		if(res == 0) {
+			res = name.compareTo(you.name);
+		}
+		
+		return res;
 	}
 	
 	

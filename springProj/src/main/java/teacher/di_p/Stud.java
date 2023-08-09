@@ -9,9 +9,11 @@ public class Stud implements Comparable<Stud>{
 	String name;
 	int [] jum;
 	int tot, avg, rank;
+	
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public void setJum(int... jum) {
 		this.jum = jum;
 		tot = 0;
@@ -22,7 +24,7 @@ public class Stud implements Comparable<Stud>{
 	}
 	
 	void rankCalc(List<Stud> studs) {
-		rank = 1;
+		rank = 1;  
 		for (Stud you : studs) {
 			if(avg < you.avg) {
 				rank++;

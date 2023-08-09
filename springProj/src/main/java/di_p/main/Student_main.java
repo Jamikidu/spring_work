@@ -2,12 +2,19 @@ package di_p.main;
 
 import java.awt.List;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import di_p.Class1;
 import di_p.Student;
+import teacher.di_p.Exam;
+import teacher.di_p.Stud;
 
 public class Student_main {
 
@@ -34,13 +41,21 @@ public class Student_main {
 		*/
 		
 		/*
-		List kors = context.getBean("kors",List.class);
+		ArrayList kors = context.getBean("kors",ArrayList.class);
 		System.out.println(kors);
-		*/
+		 */
 		
 		
 		Class1 class1 = context.getBean("class1",Class1.class);
 		System.out.println(class1);
+		
+
+		System.out.println("======================================================================");
+		for (Student stu: context.getBean("class1", Class1.class).getSet()) {
+			System.out.println(stu);
+		}
+		
+		
 	}
 
 }

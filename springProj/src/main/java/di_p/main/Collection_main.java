@@ -26,6 +26,7 @@ public class Collection_main {
 		//LinkedHashSet 순서 있고 중복안됨
 		LinkedHashSet ss2 = context.getBean("ss2",LinkedHashSet.class);
 		System.out.println(ss2);
+		
 		HashMap map1 = context.getBean("map1",HashMap.class);
 		System.out.println(map1);
 		
